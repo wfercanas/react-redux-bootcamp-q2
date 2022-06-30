@@ -23,7 +23,6 @@ const StyledLabel = styled.p`
 `;
 
 const StyledCheckoutButton = styled.button`
-  font-size: 18px;
   border: none;
   padding: 12px 100px;
   background-color: var(--y200);
