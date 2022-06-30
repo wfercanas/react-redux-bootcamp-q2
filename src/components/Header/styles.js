@@ -1,13 +1,18 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+const StyledContainer = styled.div`
+  background-color: var(--n900);
+  color: var(--n10);
+`;
+
 const StyledHeader = styled.header`
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 8px 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--n900);
-  color: var(--n10);
 `;
 
 const StyledTitle = styled.p`
@@ -32,6 +37,7 @@ const StyledLink = styled(Link)`
 `;
 
 export {
+  StyledContainer,
   StyledHeader,
   StyledTitle,
   StyledNav,

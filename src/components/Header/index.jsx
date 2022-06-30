@@ -1,6 +1,7 @@
 import React from "react";
 
 import {
+  StyledContainer,
   StyledHeader,
   StyledTitle,
   StyledNav,
@@ -11,24 +12,26 @@ import {
 
 const Header = () => {
   return (
-    <StyledHeader>
-      <StyledTitle>
-        <StyledLink to="/">Wizestore</StyledLink>
-      </StyledTitle>
-      <StyledNav>
-        <StyledList>
-          <StyledListItem>
-            <StyledLink to="/cart">Cart</StyledLink>
-          </StyledListItem>
-          <StyledListItem>
-            <StyledLink to="/products">Products</StyledLink>
-          </StyledListItem>
-          <StyledListItem>
-            <StyledLink to="/login">Login</StyledLink>
-          </StyledListItem>
-        </StyledList>
-      </StyledNav>
-    </StyledHeader>
+    <StyledContainer>
+      <StyledHeader>
+        <StyledTitle>
+          <StyledLink to="/">Wizestore</StyledLink>
+        </StyledTitle>
+        <StyledNav>
+          <StyledList>
+            <StyledListItem>
+              <StyledLink to="/cart">Cart</StyledLink>
+            </StyledListItem>
+            <StyledListItem>
+              <StyledLink to="/products">Products</StyledLink>
+            </StyledListItem>
+            <StyledListItem>
+              <StyledLink to="/login">Login</StyledLink>
+            </StyledListItem>
+          </StyledList>
+        </StyledNav>
+      </StyledHeader>
+    </StyledContainer>
   );
 };
 
