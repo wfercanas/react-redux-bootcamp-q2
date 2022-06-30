@@ -2,6 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   :root {
+    --y200: #FFC400;
     --r400: #BF2600;
     --n10: #FAFBFC;
     --n40: #DFE1E6;
