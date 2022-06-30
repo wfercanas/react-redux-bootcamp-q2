@@ -7,4 +7,23 @@ const StyledAddToCartButton = styled.button`
   color: var(--n900);
 `;
 
-export { StyledAddToCartButton };
+const StyledRemoveFromCartButton = styled.button`
+  display: flex;
+  gap: 8px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+`;
+
+const StyledIcon = styled.img``;
+
+const StyledLabel = styled.p`
+  color: var(--n400);
+`;
+
+export {
+  StyledAddToCartButton,
+  StyledRemoveFromCartButton,
+  StyledIcon,
+  StyledLabel,
+};
