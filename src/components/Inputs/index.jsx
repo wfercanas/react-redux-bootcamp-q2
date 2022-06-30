@@ -1,5 +1,8 @@
 import React from "react";
 
+import plus from "../../assets/icons/gray-plus.svg";
+import minus from "../../assets/icons/gray-minus.svg";
+
 import {
   StyledQuantityInputContainer,
   StyledButton,
@@ -11,11 +14,11 @@ const QuantityInput = () => {
   return (
     <StyledQuantityInputContainer>
       <StyledButton>
-        <StyledOperator>-</StyledOperator>
+        <StyledOperator src={minus} alt="decrease quantity" />
       </StyledButton>
       <StyledQuantityInput type="number" />
       <StyledButton>
-        <StyledOperator>+</StyledOperator>
+        <StyledOperator src={plus} alt="increase quantity" />
       </StyledButton>
     </StyledQuantityInputContainer>
   );
