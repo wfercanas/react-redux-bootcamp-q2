@@ -1,36 +1,74 @@
 import React from "react";
-import { AddToCartButton } from "../Buttons";
+
 import { shortenName } from "../../utils/shortenName";
+
+import { AddToCartButton, RemoveFromCartButton } from "../Buttons";
+import { QuantityInput } from "../Inputs";
 
 import {
   StyledProductCard,
-  StyledDataContainer,
-  StyledImage,
-  StyledName,
-  StyledCategory,
-  StyledPrice,
-  StyledButtonsContainer,
+  StyledProductDataContainer,
+  StyledProductImage,
+  StyledProductName,
+  StyledProductCategory,
+  StyledProductPrice,
+  StyledProductButtonsContainer,
+  StyledCartCard,
+  StyledCartImageContainer,
+  StyledCartImage,
+  StyledCartCardDataContainer,
+  StyledCartName,
+  StyledCartPrice,
+  StyledCartCardInputsContainer,
+  StyledCartTotalPrice,
+  StyledCartCardButtonsContainer,
 } from "./styles";
 
 const ProductCard = ({ images = [], name, categories = [], price }) => {
   return (
     <StyledProductCard>
-      <StyledDataContainer>
-        <StyledImage src={images[0]} />
-        <StyledName>{shortenName(name)}</StyledName>
-        <StyledCategory>{categories[0]}</StyledCategory>
-        <StyledPrice>
+      <StyledProductDataContainer>
+        <StyledProductImage src={images[0]} />
+        <StyledProductName>{shortenName(name)}</StyledProductName>
+        <StyledProductCategory>{categories[0]}</StyledProductCategory>
+        <StyledProductPrice>
           {new Intl.NumberFormat("en-EN", {
             style: "currency",
             currency: "USD",
           }).format(price)}
-        </StyledPrice>
-      </StyledDataContainer>
-      <StyledButtonsContainer>
+        </StyledProductPrice>
+      </StyledProductDataContainer>
+      <StyledProductButtonsContainer>
         <AddToCartButton />
-      </StyledButtonsContainer>
+      </StyledProductButtonsContainer>
     </StyledProductCard>
   );
 };
 
-export { ProductCard };
+const CartCard = ({ images = [], name, price }) => {
+  return (
+    <StyledCartCard>
+      <StyledCartImageContainer>
+        <StyledCartImage src={images[0]} alt="" />
+      </StyledCartImageContainer>
+      <StyledCartCardDataContainer>
+        <StyledCartName>{shortenName(name)}</StyledCartName>
+        <StyledCartPrice>
+          {new Intl.NumberFormat("en-EN", {
+            style: "currency",
+            currency: "USD",
+          }).format(price)}
+        </StyledCartPrice>
+      </StyledCartCardDataContainer>
+      <StyledCartCardInputsContainer>
+        <QuantityInput />
+      </StyledCartCardInputsContainer>
+      <StyledCartTotalPrice>$120.99</StyledCartTotalPrice>
+      <StyledCartCardButtonsContainer>
+        <RemoveFromCartButton />
+      </StyledCartCardButtonsContainer>
+    </StyledCartCard>
+  );
+};
+
+export { ProductCard, CartCard };
