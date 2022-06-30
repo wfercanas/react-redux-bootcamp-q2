@@ -1,8 +1,8 @@
-import { CartCard, ProductCard } from ".";
+import { CartCard, ProductCard, SummaryCard } from ".";
 
 export default {
   title: "Components / Cards",
-  components: [ProductCard, CartCard],
+  components: [ProductCard, CartCard, SummaryCard],
 };
 
 export const Product = (args) => {
@@ -33,4 +33,13 @@ Cart.args = {
     "https://image-us.samsung.com/SamsungUS/home/easy-asset/05192022/2022_QLED_Features_EyeComfort_Mode_4K_PC_708xV.jpg?$feature-benefit-jpg",
   ],
   total: 5999.99,
+};
+
+export const Summary = (args) => {
+  return <SummaryCard {...args} />;
+};
+
+Summary.args = {
+  items: 2,
+  total: 200.0,
 };

@@ -99,6 +99,49 @@ const StyledCartCardButtonsContainer = styled.div`
   justify-content: flex-end;
 `;
 
+const StyledSummaryCard = styled.section`
+  max-width: 300px;
+  padding: 8px;
+
+  & button {
+    display: block;
+    margin: 0 auto;
+  }
+`;
+
+const StyledSummaryTitle = styled.p`
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+  color: var(--n900);
+`;
+
+const StyledSummaryDataContainer = styled.div`
+  margin: 24px 0 64px;
+  border-top: 1px solid var(--n40);
+  border-bottom: 1px solid var(--n40);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+`;
+
+const StyledSummaryData = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+`;
+
+const StyledSummarySubtitle = styled.p`
+  margin: 0;
+  font-weight: bold;
+  color: var(--n900);
+`;
+
+const StyledSummaryValue = styled.p`
+  margin: 0;
+  color: var(--n400);
+`;
+
 export {
   StyledProductCard,
   StyledProductDataContainer,
@@ -116,4 +159,10 @@ export {
   StyledCartCardInputsContainer,
   StyledCartTotalPrice,
   StyledCartCardButtonsContainer,
+  StyledSummaryCard,
+  StyledSummaryTitle,
+  StyledSummaryDataContainer,
+  StyledSummaryData,
+  StyledSummarySubtitle,
+  StyledSummaryValue,
 };
