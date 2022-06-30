@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
     --r400: #BF2600;
     --n10: #FAFBFC;
     --n40: #DFE1E6;
+    --n60: #B3BAC5;
     --n400: #505F79;
     --n900: #091E42;
   }
