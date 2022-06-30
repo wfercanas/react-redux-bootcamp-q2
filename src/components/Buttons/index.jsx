@@ -7,6 +7,7 @@ import {
   StyledRemoveFromCartButton,
   StyledIcon,
   StyledLabel,
+  StyledCheckoutButton,
 } from "./styles";
 
 const AddToCartButton = () => {
@@ -22,4 +23,8 @@ const RemoveFromCartButton = () => {
   );
 };
 
-export { AddToCartButton, RemoveFromCartButton };
+const CheckoutButton = () => {
+  return <StyledCheckoutButton>Checkout</StyledCheckoutButton>;
+};
+
+export { AddToCartButton, RemoveFromCartButton, CheckoutButton };

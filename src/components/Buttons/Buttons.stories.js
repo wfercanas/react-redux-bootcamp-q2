@@ -1,8 +1,8 @@
-import { AddToCartButton, RemoveFromCartButton } from ".";
+import { AddToCartButton, CheckoutButton, RemoveFromCartButton } from ".";
 
 export default {
   title: "Components / Buttons",
-  components: [AddToCartButton, RemoveFromCartButton],
+  components: [AddToCartButton, RemoveFromCartButton, CheckoutButton],
 };
 
 export const AddToCart = (args) => {
@@ -16,3 +16,9 @@ export const RemoveFromCart = (args) => {
 };
 
 RemoveFromCart.args = {};
+
+export const Checkout = (args) => {
+  return <CheckoutButton {...args} />;
+};
+
+Checkout.args = {};

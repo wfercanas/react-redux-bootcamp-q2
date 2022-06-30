@@ -22,9 +22,18 @@ const StyledLabel = styled.p`
   margin: 0;
 `;
 
+const StyledCheckoutButton = styled.button`
+  font-size: 18px;
+  border: none;
+  padding: 12px 100px;
+  background-color: var(--y200);
+  cursor: pointer;
+`;
+
 export {
   StyledAddToCartButton,
   StyledRemoveFromCartButton,
   StyledIcon,
   StyledLabel,
+  StyledCheckoutButton,
 };
