@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 const StyledProductCard = styled.article`
-  width: 300px;
+  width: 250px;
+  padding: 8px;
   border-radius: 8px;
-  padding: 16px;
-  box-shadow: 1px 1px 8px 3px var(--n40);
+  background-color: white;
+  box-shadow: 1px 1px 20px 1px var(--n40);
   display: grid;
   grid-template-rows: 1fr auto;
 `;
@@ -19,18 +20,21 @@ const StyledImage = styled.img`
 
 const StyledName = styled.p`
   margin: 24px 0 8px;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: bold;
+  text-align: center;
   color: var(--n900);
 `;
 
 const StyledCategory = styled.p`
   margin: 8px 0 0;
   color: var(--n400);
+  text-align: center;
 `;
 
 const StyledPrice = styled.p`
-  text-align: right;
+  margin-top: 16px;
+  text-align: center;
   color: var(--n900);
 `;
 
