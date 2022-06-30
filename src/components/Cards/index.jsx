@@ -45,7 +45,7 @@ const ProductCard = ({ images = [], name, categories = [], price }) => {
   );
 };
 
-const CartCard = ({ images = [], name, price }) => {
+const CartCard = ({ images = [], name, price, total, quantity }) => {
   return (
     <StyledCartCard>
       <StyledCartImageContainer>
@@ -61,9 +61,14 @@ const CartCard = ({ images = [], name, price }) => {
         </StyledCartPrice>
       </StyledCartCardDataContainer>
       <StyledCartCardInputsContainer>
-        <QuantityInput />
+        <QuantityInput quantity={quantity} />
       </StyledCartCardInputsContainer>
-      <StyledCartTotalPrice>$120.99</StyledCartTotalPrice>
+      <StyledCartTotalPrice>
+        {new Intl.NumberFormat("en-EN", {
+          style: "currency",
+          currency: "USD",
+        }).format(total)}
+      </StyledCartTotalPrice>
       <StyledCartCardButtonsContainer>
         <RemoveFromCartButton />
       </StyledCartCardButtonsContainer>
