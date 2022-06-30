@@ -19,6 +19,7 @@ const StyledIcon = styled.img``;
 
 const StyledLabel = styled.p`
   color: var(--n400);
+  margin: 0;
 `;
 
 export {
