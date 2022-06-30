@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const StyledProductsPage = styled.article`
-  margin: 64px;
+  max-width: 1000px;
+  margin: 64px auto;
 `;
 
 const StyledTitle = styled.h1`
