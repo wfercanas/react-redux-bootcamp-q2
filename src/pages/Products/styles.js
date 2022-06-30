@@ -5,8 +5,13 @@ const StyledProductsPage = styled.article`
 `;
 
 const StyledTitle = styled.h1`
-  font-size: 38px;
-  color: var(--n900);
+  padding-bottom: 8px;
+  margin-bottom: 48px;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--n400);
+  color: var(--n400);
 `;
 
 const StyledProductsContainer = styled.div`
