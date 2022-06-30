@@ -10,13 +10,13 @@ import {
   StyledOperator,
 } from "./styles";
 
-const QuantityInput = () => {
+const QuantityInput = ({ quantity = 1 }) => {
   return (
     <StyledQuantityInputContainer>
       <StyledButton>
         <StyledOperator src={minus} alt="decrease quantity" />
       </StyledButton>
-      <StyledQuantityInput type="number" />
+      <StyledQuantityInput type="number" value={quantity} />
       <StyledButton>
         <StyledOperator src={plus} alt="increase quantity" />
       </StyledButton>
