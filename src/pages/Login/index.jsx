@@ -1,7 +1,8 @@
 import React from "react";
+import { LoginUI } from "./interface";
 
 const Login = () => {
-  return;
+  return <LoginUI />;
 };
 
 export { Login };
