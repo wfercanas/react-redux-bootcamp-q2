@@ -1,6 +1,7 @@
 import React from "react";
 
 import { ProductCard } from "../../components/Cards";
+import { Header } from "../../components/Header";
 
 import {
   StyledProductsPage,
@@ -10,20 +11,23 @@ import {
 
 const ProductsUI = ({ products }) => {
   return (
-    <StyledProductsPage>
-      <StyledTitle>Products</StyledTitle>
-      <StyledProductsContainer>
-        {products.data.products.items.map((product) => (
-          <ProductCard
-            key={product.id}
-            images={product.images}
-            name={product.name}
-            categories={product.categories}
-            price={product.price}
-          />
-        ))}
-      </StyledProductsContainer>
-    </StyledProductsPage>
+    <>
+      <Header />
+      <StyledProductsPage>
+        <StyledTitle>Products</StyledTitle>
+        <StyledProductsContainer>
+          {products.data.products.items.map((product) => (
+            <ProductCard
+              key={product.id}
+              images={product.images}
+              name={product.name}
+              categories={product.categories}
+              price={product.price}
+            />
+          ))}
+        </StyledProductsContainer>
+      </StyledProductsPage>
+    </>
   );
 };
 
