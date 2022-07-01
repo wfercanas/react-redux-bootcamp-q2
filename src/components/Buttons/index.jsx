@@ -8,6 +8,7 @@ import {
   StyledIcon,
   StyledLabel,
   StyledCheckoutButton,
+  StyledLoginButton,
 } from "./styles";
 
 const AddToCartButton = () => {
@@ -27,4 +28,8 @@ const CheckoutButton = () => {
   return <StyledCheckoutButton>Checkout</StyledCheckoutButton>;
 };
 
-export { AddToCartButton, RemoveFromCartButton, CheckoutButton };
+const LoginButton = () => {
+  return <StyledLoginButton>Login</StyledLoginButton>;
+};
+
+export { AddToCartButton, RemoveFromCartButton, CheckoutButton, LoginButton };

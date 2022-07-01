@@ -29,10 +29,20 @@ const StyledCheckoutButton = styled.button`
   cursor: pointer;
 `;
 
+const StyledLoginButton = styled.button`
+  color: var(--n10);
+  background-color: var(--n900);
+  border: none;
+  padding: 8px 16px;
+  width: 300px;
+  cursor: pointer;
+`;
+
 export {
   StyledAddToCartButton,
   StyledRemoveFromCartButton,
   StyledIcon,
   StyledLabel,
   StyledCheckoutButton,
+  StyledLoginButton,
 };
