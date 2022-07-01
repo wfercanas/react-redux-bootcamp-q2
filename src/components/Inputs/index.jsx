@@ -16,7 +16,7 @@ const QuantityInput = ({ quantity = 1 }) => {
       <StyledButton>
         <StyledOperator src={minus} alt="decrease quantity" />
       </StyledButton>
-      <StyledQuantityInput type="number" value={quantity} />
+      <StyledQuantityInput type="number" value={quantity} disabled />
       <StyledButton>
         <StyledOperator src={plus} alt="increase quantity" />
       </StyledButton>
