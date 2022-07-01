@@ -60,6 +60,7 @@ const StyledLoginInput = styled.input`
   border: 1px solid var(--n40);
   padding: 8px 16px;
   width: 300px;
+  box-sizing: border-box;
 
   &:focus {
     outline: 1px solid var(--n60);
