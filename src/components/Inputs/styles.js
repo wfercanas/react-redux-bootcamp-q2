@@ -55,9 +55,21 @@ const StyledOperator = styled.img`
   transform: scale(0.8);
 `;
 
+const StyledLoginInput = styled.input`
+  display: block;
+  border: 1px solid var(--n40);
+  padding: 8px 16px;
+  width: 300px;
+
+  &:focus {
+    outline: 1px solid var(--n60);
+  }
+`;
+
 export {
   StyledQuantityInputContainer,
   StyledButton,
   StyledQuantityInput,
   StyledOperator,
+  StyledLoginInput,
 };

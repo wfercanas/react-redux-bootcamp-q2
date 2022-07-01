@@ -8,6 +8,7 @@ import {
   StyledButton,
   StyledQuantityInput,
   StyledOperator,
+  StyledLoginInput,
 } from "./styles";
 
 const QuantityInput = ({ quantity = 1 }) => {
@@ -24,4 +25,14 @@ const QuantityInput = ({ quantity = 1 }) => {
   );
 };
 
-export { QuantityInput };
+const LoginInput = ({ type = "text", placeholder = "", required = false }) => {
+  return (
+    <StyledLoginInput
+      type={type}
+      placeholder={placeholder}
+      required={required}
+    />
+  );
+};
+
+export { QuantityInput, LoginInput };
