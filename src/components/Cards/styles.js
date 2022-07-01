@@ -47,7 +47,6 @@ const StyledCartCard = styled.article`
   max-width: 600px;
   padding: 24px 0;
   border-top: 1px solid var(--n40);
-  border-bottom: 1px solid var(--n40);
   display: grid;
   grid-template-columns: 200px auto auto;
   grid-template-rows: repeat(2, auto);
@@ -65,7 +64,8 @@ const StyledCartImageContainer = styled.div`
 
 const StyledCartImage = styled.img`
   width: 100%;
-  height: auto;
+  height: 120px;
+  object-fit: scale-down;
 `;
 
 const StyledCartCardDataContainer = styled.div``;
@@ -97,6 +97,7 @@ const StyledCartCardButtonsContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: flex-end;
 `;
 
 const StyledSummaryCard = styled.section`
